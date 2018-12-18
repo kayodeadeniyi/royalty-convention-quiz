@@ -1,0 +1,58 @@
+.container {
+  /* display: flex;
+  flex-direction: row; */
+  position: relative;
+  padding: 20px;
+}
+
+.link {
+  left: 20px;
+  position: absolute;
+  top: 40px;
+}
+
+.questionContainer,
+.answerContainer {
+  font-size: 35px;
+  margin: 40px;
+}
+
+.question,
+.answer {
+  margin-bottom: 20px;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.optionTag {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.answerOption {
+  text-transform: uppercase;
+}
+
+.button {
+  border-radius: 10px;
+  bottom: 0;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 24px;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
