@@ -20,7 +20,7 @@ export default class Home extends Component {
 
     return (
       <div>
-        <h2 className={styles.header}>Royalty 2018 Bible Quiz</h2>
+        <h2 className={styles.header}>Royalty 2019 (Kingdom Reality) Bible Quiz</h2>
         <div className={styles.smContainer}>{questions}</div>
       </div>
     );

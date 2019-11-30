@@ -1,1047 +1,1118 @@
 const questions = {
-  1: {
-    question: 'Which of these did not happen on the day of Pentecost?',
+  0: {
+    question: 'Is this a test question?',
     options: {
-      a: 'Earthquake',
-      b: 'Sound from heaven',
-      c: 'Speaking with other tongues',
-      d: 'Divided tongues'
+      a: 'Yes',
+      b: 'No',
+      c: 'Maybe',
+      d: 'All of the above'
     },
-    answer: 'a'
+    answer: 'd'
+  },
+
+  1: {
+    question: 'How many generations are there between Abraham and Jesus?',
+    options: {
+      a: '7 generations',
+      b: '28 generations',
+      c: '34 generations',
+      d: '42 generations'
+    },
+    answer: 'd'
   },
 
   2: {
-    question: 'Where was Jesus when he was taken up into heaven?',
-    options: {
-      a: 'Mount of Olives',
-      b: 'By the sea of Galilee',
-      c: 'Jerusalem',
-      d: 'Caesarea'
-    },
-    answer: 'a'
-  },
-
-  3: {
-    question: 'The betrayal of Jesus was foretold by which of these men?',
-    options: {
-      a: 'Jeremiah',
-      b: 'David',
-      c: 'Micah',
-      d: 'Elijah'
-    },
-    answer: 'b'
-  },
-
-  4: {
-    question: 'Judas Iscariot acquired a field with the money gained from betraying Jesus. Where was this field located?',
+    question: 'In which city was Jesus born?',
     options: {
       a: 'Galilee',
       b: 'Nazareth',
-      c: 'Jerusalem',
-      d: 'Caesarea'
+      c: 'Bethlehem',
+      d: 'Egypt'
+    },
+    answer: 'c'
+  },
+
+  3: {
+    question: 'Where was Matthew when Jesus called him?',
+    options: {
+      a: 'On the street',
+      b: 'On a tree',
+      c: 'In a tax office',
+      d: 'By the river side'
+    },
+    answer: 'c'
+  },
+
+  4: {
+    question: 'What will either justify you or condemn you?',
+    options: {
+      a: 'Your thoughts',
+      b: 'Your deeds',
+      c: 'Your words',
+      d: 'Your fruits'
     },
     answer: 'c'
   },
 
   5: {
-    question: 'Which of the following people was not among those who confronted Peter and John while they were speaking to the people after the healing of the man at the beautiful gate?',
+    question: 'Who was Herod Antipas?',
     options: {
-      a: 'the Priests',
-      b: 'the captain of the Temple guard',
-      c: 'some Sadducees',
-      d: 'some Pharisees'
+      a: 'The King of Judea',
+      b: 'The Governor of Jerusalem',
+      c: 'The Roman tetrarch',
+      d: 'The Ruler of Galilee'
     },
     answer: 'd'
   },
 
   6: {
-    question: 'Who presided over the Sanhedrin (council of rulers, elders and teachers of religious law) before which John and Peter were brought?',
+    question: 'Where did John the Baptist die?',
     options: {
-      a: 'Annas',
-      b: 'John',
-      c: 'Caiaphas',
-      d: 'Aeneas'
+      a: 'In prison',
+      b: 'At Herod\'s birthday party',
+      c: 'On a spike',
+      d: 'In the arena'
     },
     answer: 'a'
   },
 
   7: {
-    question: 'How many hours after the death of Ananias did Sapphira also die?',
+    question: '"How often should I forgive someone who sins against me? Seven times?" Who asked this question?',
     options: {
-      a: 'one hour',
-      b: 'two hours',
-      c: 'three hours',
-      d: 'none of the above'
+      a: 'Peter',
+      b: 'John',
+      c: 'Some Pharisees',
+      d: 'Someone from the crowd that followed Jesus'
     },
-    answer: 'c'
+    answer: 'a'
   },
 
   8: {
-    question: 'Who was NOT among the 7 chosen to serve the believers?',
+    question: 'Who among these women is not mentioned in the family tree of Jesus?',
     options: {
-      a: 'Nicanor',
-      b: 'Philip',
-      c: 'Simon',
-      d: 'Nicolas'
+      a: 'Ruth',
+      b: 'Rachel',
+      c: 'Tamar',
+      d: 'Rahab'
     },
-    answer: 'c'
+    answer: 'b'
   },
 
   9: {
-    question: 'Who in chapter 4 sold his land and brought the money to the apostles’ feet?',
+    question: 'What sign did Jesus give to his disciples to identify the betrayer among them?',
     options: {
-      a: 'Ananias',
-      b: 'Stephen',
-      c: 'Barnabas',
-      d: 'None of the above'
+      a: 'The one who kisses me',
+      b: 'The one with his face to the ground',
+      c: 'The one who dipped his hand in the same bowl with me',
+      d: 'The one who loves money the most'
     },
     answer: 'c'
   },
 
   10: {
-    question: 'How long did Moses’ parents hide and care for him before they left him by the riverside to be found by Pharaoh’s daughter?',
+    question: 'In which city did Jesus grow up?',
     options: {
-      a: 'seven days',
-      b: 'one month',
-      c: 'three months',
-      d: 'six months'
+      a: 'Nazareth',
+      b: 'Jerusalem',
+      c: 'Bethlehem',
+      d: 'Caesarea'
     },
-    answer: 'c'
+    answer: 'a'
   },
 
   11: {
-    question: 'For how long was Israel in bondage and oppressed by Egypt?',
+    question: 'What does Jesus say the meek shall have?',
     options: {
-      a: '1 year',
-      b: '40 years',
-      c: '120 years',
-      d: '400 years'
+      a: 'The Kingdom of God',
+      b: 'Peace of mind',
+      c: 'The earth',
+      d: 'The treasures of Heaven'
     },
-    answer: 'd'
+    answer: 'c'
   },
 
   12: {
-    question: 'From what portion of the Bible was the Ethiopian reading?',
+    question: 'To illustrate God’s provision, what example in nature did Jesus use?',
     options: {
-      a: 'Isaiah',
-      b: 'Jeremiah',
-      c: 'The law',
-      d: 'Daniel'
+      a: 'Ants',
+      b: 'Birds',
+      c: 'Spiders',
+      d: 'Butterflies'
     },
-    answer: 'a'
+    answer: 'b'
   },
 
   13: {
-    question: 'Who had been paralyzed for eight years and was healed at Lydda?',
+    question: "'Assuredly, I say to you I have not found such great faith, not even on Israel!' Who was Jesus speaking about?",
     options: {
-      a: 'Dorcas',
-      b: 'Aeneas',
-      c: 'Simon',
-      d: 'James'
+      a: 'The centurion',
+      b: 'The leper',
+      c: 'The widow',
+      d: 'The woman with the issue of blood'
     },
-    answer: 'b'
+    answer: 'a'
   },
 
   14: {
-    question: 'Who did Cornelius send to fetch Peter?',
+    question: 'Jesus commanded demons to go into a herd of swine. According to Matthew, who did Jesus meet in this encounter?',
     options: {
-      a: 'two servants',
-      b: 'three servants',
-      c: 'one servant and one soldier',
-      d: 'two servants and one soldier'
+      a: 'A demon-possessed man',
+      b: 'A demon-possessed man bound in chains',
+      c: 'Two demon-possessed men',
+      d: 'Two demon-possessed men bound in chains'
     },
-    answer: 'd'
+    answer: 'c'
   },
 
   15: {
-    question: 'To whose house did Peter go after he was rescued from the prison by an angel?',
+    question: 'In which of these towns did the people scoff at Jesus, saying "He is just the carpenter\'s son"?',
     options: {
-      a: 'Lydia\'s',
-      b: 'Mary the mother of Jesus\'',
-      c: 'Rhoda\'s',
-      d: 'Mary the mother of John Mark\'s'
+      a: 'Nazareth',
+      b: 'Chorazin',
+      c: 'Capernaum',
+      d: 'Tyre'
     },
-    answer: 'd'
+    answer: 'a'
   },
 
   16: {
-    question: 'People here received the word with readiness of mind and searched the scriptures whether the things Paul taught were so.',
+    question: '"Should a man be allowed to divorce his wife for just any reason?" Who asked this question?',
     options: {
-      a: 'Berea',
-      b: 'Corinth',
-      c: 'Ephesus',
-      d: 'Thessalonica'
+      a: 'Peter',
+      b: 'John',
+      c: 'Some Pharisees',
+      d: 'Someone from the crowd that followed Jesus'
     },
-    answer: 'a'
+    answer: 'c'
   },
 
   17: {
-    question: 'In choosing a replacement for Judas Iscariot, the disciples decided to consider the men who had accompanied them since _________.',
+    question: 'In whose house did Jesus celebrate the Passover?',
     options: {
-      a: 'since the time of Jesus’ baptism till his ascension',
-      b: 'since the sermon on the mount till his ascension',
-      c: 'since the day Jesus performed his first miracle till his ascension',
-      d: 'since the time Jesus chose his 12 disciples till his ascension'
-    },
-    answer: 'a'
-  },
-
-  18: {
-    question: 'What Island was Barnabas from?',
-    options: {
-      a: 'Sicily',
-      b: 'Cilicia',
-      c: 'Cyprus',
-      d: 'Cyrene'
-    },
-    answer: 'c'
-  },
-
-  19: {
-    question: 'Where was Paul when he had a vision of a man saying, "Come over into Macedonia and help us"?',
-    options: {
-      a: 'Troas',
-      b: 'Athens',
-      c: 'Philippi',
-      d: 'New York'
-    },
-    answer: 'a'
-  },
-
-  20: {
-    question: 'Where did Paul and Silas convert their jailer?',
-    options: {
-      a: 'Jerusalem',
-      b: 'Philippi',
-      c: 'Lystra',
-      d: 'Derbe'
-    },
-    answer: 'b'
-  },
-
-  21: {
-    question: 'Where was Paul shipwrecked in Acts 27?',
-    options: {
-      a: 'Cyprus',
-      b: 'Patmos',
-      c: 'Malta',
-      d: 'Sicily'
-    },
-    answer: 'c'
-  },
-
-  22: {
-    question: 'Paul had a dream about a man begging for help. Where was this man from?',
-    options: {
-      a: 'Rome',
-      b: 'Egypt',
-      c: 'Macedonia',
-      d: 'Ethiopia'
-    },
-    answer: 'c'
-  },
-
-  23: {
-    question: 'In chapter nineteen of Acts, Demetrius of Ephesus felt threatened by the Gospel. What was his job?',
-    options: {
-      a: 'Silversmith',
-      b: 'Soldier',
-      c: 'Priest',
-      d: 'Tentmaker'
-    },
-    answer: 'a'
-  },
-
-  24: {
-    question: 'Who warned Paul about the plot against his life as found in Acts 23?',
-    options: {
-      a: 'A roman Tribune',
-      b: 'A servant girl',
-      c: 'His nephew',
-      d: 'One of the chief priests'
-    },
-    answer: 'c'
-  },
-
-  25: {
-    question: 'Why was Paul ordered to appear before Caesar in Acts 25?',
-    options: {
-      a: 'Governor Felix could not make a decision',
-      b: 'The Jews lobbied to get him out of Judea',
-      c: 'He appealed to Caesar',
-      d: 'Caesar personally asked to see him'
-    },
-    answer: 'c'
-  },
-
-  26: {
-    question: 'Against what city did Paul and Silas shake the dust off their feet?',
-    options: {
-      a: 'Antioch in Pisidia',
-      b: 'Lystra',
-      c: 'Iconium',
-      d: 'Perga'
-    },
-    answer: 'a'
-  },
-
-  27: {
-    question: 'Which god was Barnabas compared with? ',
-    options: {
-      a: 'Zeus',
-      b: 'Hermes',
-      c: 'Sango',
-      d: 'Poseidon'
-    },
-    answer: 'a'
-  },
-
-  28: {
-    question: 'For how long did the girl with the spirit of divination follow Paul?',
-    options: {
-      a: '3 days',
-      b: '6 days',
-      c: '7 days',
-      d: 'none of the above'
-    },
-    answer: 'd'
-  },
-
-  29: {
-    question: 'In which of these places did the Holy Spirit forbid Paul and Silas to speak the word of God?',
-    options: {
-      a: 'Asia',
-      b: 'Warri',
-      c: 'Mysia',
-      d: 'Troas'
-    },
-    answer: 'a'
-  },
-
-  30: {
-    question: 'Who among these men had a school in Ephesus where Paul taught daily for two years?',
-    options: {
-      a: 'Alexander',
-      b: 'Aristarchus',
-      c: 'Gaius',
-      d: 'Tyrannus'
-    },
-    answer: 'd'
-  },
-
-  31: {
-    question: 'Where did the Lord appear to Paul in the night by a vision saying He had many people in this city?',
-    options: {
-      a: 'Athens',
-      b: 'Berea',
-      c: 'Corinth',
-      d: 'Bithynia'
-    },
-    answer: 'c'
-  },
-
-  32: {
-    question: 'Who was called an evangelist?',
-    options: {
-      a: 'Aristarchus',
-      b: 'Timothy',
-      c: 'Gaius',
-      d: 'Philip'
-    },
-    answer: 'd'
-  },
-
-  33: {
-    question: "Which prophet took Paul's girdle and foretold that the Jews would bind the man that owned the girdle?",
-    options: {
-      a: 'Agabus',
-      b: 'Tyrannus',
-      c: 'Simon',
-      d: 'Aeneas'
-    },
-    answer: 'a'
-  },
-
-  34: {
-    question: 'When Paul returned to Jerusalem in Chapter 21, what did James and the elders ask Paul to do?',
-    options: {
-      a: 'Reconcile his differences with Barnabas',
-      b: 'Go to Corinth',
-      c: 'Go to Antioch',
+      a: 'Simon the leper',
+      b: 'James and John',
+      c: 'Peter',
       d: 'None of the above'
     },
     answer: 'd'
   },
 
-  35: {
-    question: 'How did Paul travel from Troas to Assos?',
+  18: {
+    question: 'What was John the Baptist\'s belt made out of?',
     options: {
-      a: 'He was taken by the Holy Spirit',
-      b: 'Rode a horse',
-      c: 'Sailed',
-      d: 'Walked'
+      a: 'Leather',
+      b: 'Camel hair',
+      c: 'Cotton',
+      d: 'Locust'
+    },
+    answer: 'a'
+  },
+
+  19: {
+    question: '"Blessed are the _______, for they will see God."',
+    options: {
+      a: 'meek',
+      b: 'merciful',
+      c: 'peacemakers',
+      d: 'pure in heart'
     },
     answer: 'd'
   },
 
-  36: {
-    question: 'What question did Paul ask the twelve disciples of John the Baptist at Ephesus?',
+  20: {
+    question: 'What did the soldiers give Jesus when they took Him into the palace?',
     options: {
-      a: 'Can I explain to you the way of God more accurately?',
-      b: 'Do you understand what you are reading?',
-      c: 'Did you receive the Holy Spirit when you believed?',
-      d: 'Here is water, what hinders you from being baptized?'
+      a: 'A crown of thorns',
+      b: 'A scarlet robe',
+      c: 'A reed',
+      d: 'All of the above'
+    },
+    answer: 'd'
+  },
+
+  21: {
+    question: 'What little act did Jesus say would be rewarded?',
+    options: {
+      a: 'Paying tithe',
+      b: 'Giving a cup of cold water',
+      c: 'Taking care of children',
+      d: 'Fasting'
+    },
+    answer: 'b'
+  },
+
+  22: {
+    question: 'In the "Sermon on the Mount" who did Jesus say would see God?',
+    options: {
+      a: 'The meek',
+      b: 'The merciful',
+      c: 'The peacemakers',
+      d: 'The pure in heart'
+    },
+    answer: 'd'
+  },
+
+  23: {
+    question: 'Which ruler wanted the baby Jesus killed?',
+    options: {
+      a: 'Philip',
+      b: 'Herod',
+      c: 'Augustus',
+      d: 'Tiberius'
+    },
+    answer: 'b'
+  },
+
+  24: {
+    question: 'What contrasts did Jesus make in the "Sermon on the Mount"?',
+    options: {
+      a: 'Narrow and wide gates',
+      b: 'Narrow and broad ways',
+      c: 'Good and corrupt trees',
+      d: 'All of the above'
+    },
+    answer: 'd'
+  },
+
+  25: {
+    question: "How did Jesus heal Peter's mother-in-law?",
+    options: {
+      a: 'He commanded her to be healed',
+      b: 'He touched her hand',
+      c: 'He touched her forehead',
+      d: 'He asked her to get up and serve Him and the disciples'
+    },
+    answer: 'b'
+  },
+
+  26: {
+    question: 'What shall you be in danger of if you say to your brother "Raca" (meaning idiot)?',
+    options: {
+      a: 'Hell fire',
+      b: 'The Council',
+      c: 'Judgement',
+      d: 'All of the above'
+    },
+    answer: 'b'
+  },
+
+  27: {
+    question: 'In which town did the people\'s lack of faith prevent Jesus from doing a lot of miracles?',
+    options: {
+      a: 'Capernaum',
+      b: 'Chorazin',
+      c: 'Nazareth',
+      d: 'Bethsaida'
+    },
+    answer: 'c'
+  },
+
+  28: {
+    question: 'What did Jesus do as soon as he heard about the death of John the Baptist?',
+    options: {
+      a: 'He preached about John the Baptist',
+      b: 'He went to a remote area to be alone',
+      c: 'He went to the hills to pray',
+      d: 'None of the above'
+    },
+    answer: 'b'
+  },
+
+  29: {
+    question: "In which town did the people beg to touch the hem of Jesus' garment?",
+    options: {
+      a: 'Gerasenes',
+      b: 'Gennesaret',
+      c: 'Gilead',
+      d: 'Galilee'
+    },
+    answer: 'b'
+  },
+
+  30: {
+    question: 'In the parable of the workers in the vineyard, why were some of the labourers unhappy with being paid only one penny?',
+    options: {
+      a: 'They worked overtime but no extra pay',
+      b: 'They didn’t think it was enough for the work they did',
+      c: 'Some had worked less hours for the same pay',
+      d: 'They were promised more than one penny'
+    },
+    answer: 'c'
+  },
+
+  31: {
+    question: 'Matthew begins his gospel with a narrative of the family tree of Jesus. Who does this genealogy begin with?',
+    options: {
+      a: 'Adam',
+      b: 'Moses',
+      c: 'Abraham',
+      d: 'Noah'
+    },
+    answer: 'c'
+  },
+
+  32: {
+    question: 'In whose house did a woman pour an expensive perfume on Jesus?',
+    options: {
+      a: 'John and James',
+      b: 'Matthew the tax collector',
+      c: 'Simon the leper',
+      d: 'The woman'
+    },
+    answer: 'c'
+  },
+
+  33: {
+    question: 'How did Jesus and his disciples end the last supper?',
+    options: {
+      a: 'They sung a hymn',
+      b: 'They prayed',
+      c: 'They took the communion',
+      d: 'They disagreed about who the betrayer was'
+    },
+    answer: 'a'
+  },
+
+  34: {
+    question: 'When accused of not respecting the sabbath, Jesus mentioned an Old Testament king who ate the bread of the Presence, which was only lawful for the priests. Which king was that?',
+    options: {
+      a: 'Solomon',
+      b: 'David',
+      c: 'Saul',
+      d: 'Ahab'
+    },
+    answer: 'b'
+  },
+
+  35: {
+    question: 'Jesus likened the kingdom of heaven with something valuable that a merchant gave up everything to get. What?',
+    options: {
+      a: 'Land',
+      b: 'Gold',
+      c: 'Pearls',
+      d: 'Silver'
+    },
+    answer: 'c'
+  },
+
+  36: {
+    question: 'Who among these people was not on the mountain of transfiguration?',
+    options: {
+      a: 'Moses',
+      b: 'Elijah',
+      c: 'Noah',
+      d: 'Jesus'
     },
     answer: 'c'
   },
 
   37: {
-    question: 'Who did the Jews assume to have been brought into the temple by Paul, thereby defiling it? ',
+    question: '"Do not give dogs what is _____; and do not throw your pearls before swine, lest they trample them under foot and turn to attack you."',
     options: {
-      a: 'Tyrannus',
-      b: 'Trophimus',
-      c: 'Gaius',
-      d: ' Aristarchus'
+      a: 'holy',
+      b: 'valuable',
+      c: 'good',
+      d: 'bad'
+    },
+    answer: 'a'
+  },
+
+  38: {
+    question: 'Who said to Jesus – "Lord, if you will, you can make me clean."?',
+    options: {
+      a: 'A deaf man',
+      b: 'A leper',
+      c: 'A paralytic',
+      d: 'A woman possessed by a demon'
     },
     answer: 'b'
   },
 
-  38: {
-    question: 'Which of these men provided lodging for Paul in Jerusalem and was referred to as an early disciple?',
-    options: {
-      a: 'Philip',
-      b: 'Alexander',
-      c: 'Gaius',
-      d: 'Mnason'
-    },
-    answer: 'd'
-  },
-
   39: {
-    question: '"Are you not the Egyptian who some time ago stirred up a rebellion and led the four thousand assassins out into the wilderness?" Who said this to Paul?',
+    question: 'When the women met the risen Jesus, he gave them a message to give to the disciples. Where did he tell them to go and meet him?',
     options: {
-      a: 'the commander of the garrison',
-      b: 'the guard of the prison',
-      c: 'the city clerk',
-      d: 'the Proconsul of Achaia'
+      a: 'Galilee',
+      b: 'Jerusalem',
+      c: 'Bethany',
+      d: 'In the house of one of the disciples'
     },
     answer: 'a'
   },
 
   40: {
-    question: 'Which of these did Paul NOT talk to Felix about?',
+    question: 'After John the Baptist had been arrested, Jesus left Nazareth and made his home in __________.',
     options: {
-      a: 'righteousness',
-      b: 'self-control',
-      c: 'the coming judgement',
-      d: 'baptism'
+      a: 'Bethlehem',
+      b: 'Jerusalem',
+      c: 'Capernaum',
+      d: 'Samaria'
     },
-    answer: 'd'
+    answer: 'c'
   },
 
   41: {
-    question: '“Do you think you can persuade me to become a Christian so quickly?” Who made this statement to Paul?',
+    question: 'Which Prophet did John the Baptist quote when he preached, "A voice of one calling in the wilderness, prepare the way for the Lord…"?',
     options: {
-      a: 'Agrippa',
-      b: 'Festus',
-      c: 'Caesar',
-      d: 'Felix'
+      a: 'Jeremiah',
+      b: 'Isaiah',
+      c: 'Micah',
+      d: 'Joel'
     },
     answer: 'a'
   },
 
   42: {
-    question: 'Who among these men was an Areopagite who was converted at Athens?',
+    question: `Arrange the sequence of the temptation of Jesus.\n
+    I. Cast himself down from the pinnacle of the temple\n
+    II. Bow down and worship Satan so that he will give the kingdoms of the world\n
+    III. Turn the stones into bread`,
     options: {
-      a: 'Apollos',
-      b: 'Sosthenes',
-      c: 'Dionysius',
-      d: 'Crispus'
+      a: 'I, II, III',
+      b: 'III, II, I',
+      c: 'III, I, II',
+      d: 'II, III, I'
     },
     answer: 'c'
   },
 
   43: {
-    question: 'In which city did Paul cut his hair?',
+    question: 'Where did the wise men find baby Jesus?',
     options: {
-      a: 'Ephesus',
-      b: 'Corinth',
-      c: 'Antioch',
-      d: 'Cenchreae'
+      a: 'A stable',
+      b: 'A house',
+      c: 'A temple',
+      d: 'A baby court'
     },
-    answer: 'd'
+    answer: 'b'
   },
 
   44: {
-    question: 'To whom did Priscilla and Aquila have to explain God’s word more accurately?',
+    question: 'What question did Jesus ask the blind men to strengthen their faith?',
     options: {
-      a: 'Apollos',
-      b: 'Dionysius',
-      c: 'Crispus',
-      d: 'Justus'
+      a: 'Do you believe that I am able to do this?',
+      b: 'Do you believe you will be healed when I touch you?',
+      c: 'Do you want to be made well?',
+      d: 'All of the above'
     },
     answer: 'a'
   },
 
   45: {
-    question: 'How long did Paul stay in Corinth to teach the people the word of God?',
+    question: `"Foxes have holes and birds of the air have nests, but the Son of Man has nowhere to lay His head."\n
+    Who did Jesus say this to?`,
     options: {
-      a: 'a year and 6 months',
-      b: '2 years',
-      c: '2 years and 6 months',
-      d: '3 years'
+      a: 'The 12 disciples',
+      b: ' The great multitudes that followed Him',
+      c: ' Peter, James and John only',
+      d: 'A scribe'
     },
-    answer: 'a'
+    answer: 'd'
   },
 
   46: {
-    question: 'Whose house was next door to the Synagogue in Corinth?',
+    question: 'Jesus sent out the apostles after endowing them with power. Which of these was not among his commands to them?',
     options: {
-      a: 'Melchizedek',
-      b: 'Justus',
-      c: 'Gallio',
-      d: 'Crispus'
+      a: 'Give as freely as you have received',
+      b: 'Go to the gentiles',
+      c: 'Do not refuse hospitality',
+      d: 'Flee when you are persecuted'
     },
     answer: 'b'
   },
 
   47: {
-    question: 'In which city did Paul and Barnabas part ways after a disagreement?',
+    question: 'Matthew records the story about how Jesus fed four thousand. How many days had they been with Jesus before this miracle was performed?',
     options: {
-      a: 'Cilicia',
-      b: 'Antioch',
-      c: 'Pamphylia',
-      d: 'Ephesus'
+      a: 'Just one evening',
+      b: 'One day',
+      c: 'Three days',
+      d: 'Seven days'
+    },
+    answer: 'c'
+  },
+
+  48: {
+    question: 'How many baskets of leftover food did disciples collect after the feeding of four thousand?',
+    options: {
+      a: 'Five',
+      b: 'Seven',
+      c: 'Twelve',
+      d: 'Many'
     },
     answer: 'b'
   },
 
-  48: {
-    question: 'In whose house did Peter stay while he was in Joppa?',
-    options: {
-      a: 'Simon',
-      b: 'Judas',
-      c: 'Aeneas',
-      d: 'Tabitha'
-    },
-    answer: 'a'
-  },
-
   49: {
-    question: 'Where was Philip found after the Spirit of the Lord took him away from the Eunuch’s carriage?',
+    question: 'Which of these prophets did the disciples not specifically mention when Jesus asked them, "Who do men say that I am?"',
     options: {
-      a: 'Samaria',
-      b: 'Gaza',
-      c: 'Caesarea',
-      d: 'Azotus'
+      a: 'John the Baptist',
+      b: 'Elijah',
+      c: 'Jeremiah',
+      d: 'Isaiah'
     },
     answer: 'd'
   },
 
   50: {
-    question: 'In which city were Barnabas and Paul referred to as gods?',
+    question: 'Why were the chief priests and elders unwillingly to arrest Jesus during the Passover festival?',
     options: {
-      a: 'Derbe',
-      b: 'Iconium',
-      c: 'Lystra',
-      d: 'Antioch'
-    },
-    answer: 'c'
-  },
-
-  51: {
-    question: '. In whose house did Saul (Paul) stay after his encounter on the way to Damascus?',
-    options: {
-      a: 'Judas',
-      b: 'Ananias',
-      c: 'Simon',
-      d: 'Aeneas'
-    },
-    answer: 'a'
-  },
-
-  52: {
-    question: 'What did the Samaritans do after Peter and John arrived in Samaria?',
-    options: {
-      a: 'They repented',
-      b: 'They were baptized in Jesus\' name',
-      c: 'They received the Holy Spirit',
-      d: 'All of the above'
-    },
-    answer: 'c'
-  },
-
-  53: {
-    question: 'Who brought Saul (Paul) to the Apostles in Jerusalem after his conversion?',
-    options: {
-      a: 'Philip',
-      b: 'Some Jews',
-      c: 'Barnabas',
-      d: 'Silas'
-    },
-    answer: 'c'
-  },
-
-  54: {
-    question: 'Who among these men had his house attacked and was dragged before the city authorities for harbouring Paul and Silas?',
-    options: {
-      a: 'Jason',
-      b: 'Dionysius',
-      c: 'the Philippian Jailer',
-      d: 'Simon the Tanner'
-    },
-    answer: 'a'
-  },
-
-  55: {
-    question: 'Who had a Jewish mother and a Greek father?',
-    options: {
-      a: 'Barnabas',
-      b: 'Timothy',
-      c: 'Crispus',
-      d: 'Apollos'
+      a: 'They didn’t want to disrespect the spirit of the festival',
+      b: 'They didn’t want to cause riot among the people',
+      c: 'The festival was too open to execute their plan',
+      d: 'They had a better plan'
     },
     answer: 'b'
   },
 
-  56: {
-    question: 'When Jesus spoke about the promise of the Holy Spirit, what were the disciples concerned about?',
+  51: {
+    question: 'What was the amount paid to Judas for betraying Jesus?',
     options: {
-      a: 'when He would rescue Israel from Roman authority',
-      b: 'when the Holy Spirit would come',
-      c: 'when Jesus would ascend into heaven',
-      d: 'how to choose a replacement for Judas Iscariot'
-    },
-    answer: 'a'
-  },
-
-  57: {
-    question: 'Why was Paul\'s "spirit provoked within him" while he was waiting in Athens?',
-    options: {
-      a: 'A slave girl followed him everywhere',
-      b: 'People demanded he heal them',
-      c: 'The Jewish officials tried to have him arrested',
-      d: 'The city was full of idols'
+      a: 'Thirty pennies',
+      b: 'Thirty gold coins',
+      c: 'Thirty denarius',
+      d: 'Thirty silver coins'
     },
     answer: 'd'
   },
 
-  58: {
-    question: 'Which god was Paul mistaken for?',
+  52: {
+    question: 'How did they identify Peter as a follower of Jesus?',
     options: {
-      a: 'Hermes',
-      b: 'Apollo',
-      c: 'Poseidon',
-      d: 'Zeus'
+      a: 'His manner of dressing',
+      b: 'His accent',
+      c: 'His face',
+      d: 'One of the servant girls knew him personally'
+    },
+    answer: 'b'
+  },
+
+  53: {
+    question: '"The _____ is the lamp of the body. So, if your ____ is sound, your whole body will be full of light."',
+    options: {
+      a: 'eye, eye',
+      b: 'mind, mind',
+      c: 'heart, heart',
+      d: 'tongue, tongue'
+    },
+    answer: 'a'
+  },
+
+  54: {
+    question: 'Who was the father of Joseph the husband of Mary?',
+    options: {
+      a: 'Nathan',
+      b: 'Jacob',
+      c: 'David',
+      d: 'Jotham'
+    },
+    answer: 'b'
+  },
+
+  55: {
+    question: 'Who said to the disciples, "Why does your teacher eat with tax collectors and sinners?"',
+    options: {
+      a: 'The disciples of John',
+      b: 'A tax collector',
+      c: 'The Pharisees',
+      d: 'A Samaritan'
+    },
+    answer: 'c'
+  },
+
+  56: {
+    question: 'Complete this statement: "For you are careful to tithe even the tiniest income from your herb gardens, but you ignore the more important aspects of the law — _________, mercy, and faith."',
+    options: {
+      a: 'wisdom',
+      b: 'justice',
+      c: 'holiness',
+      d: 'righteousness'
+    },
+    answer: 'b'
+  },
+
+  57: {
+    question: `"Are you the Messiah we  been expecting, or should we keep looking for someone else?"\n
+    Who made this question?`,
+    options: {
+      a: 'John the Baptist',
+      b: 'The mother of James and John',
+      c: 'Peter',
+      d: 'The Jews'
+    },
+    answer: 'a'
+  },
+
+  58: {
+    question: 'Which woman from the Old Testament is said to be \'weeping for her children\' in the description of the slaughter of all the boys who were two years or younger?',
+    options: {
+      a: ' Rachel',
+      b: 'Ruth',
+      c: 'Tamar',
+      d: 'Sarah'
     },
     answer: 'a'
   },
 
   59: {
-    question: 'What controversy caused men to be specially chosen to care for the widows?',
+    question: "What was the name of the man that the soldiers compelled to bear Jesus's cross?",
     options: {
-      a: 'The Hebrew widows were neglected',
-      b: 'The Greek widows were neglected',
-      c: 'Money was missing from the fund',
-      d: 'The disciples were neglecting their preaching duties'
+      a: 'Simon',
+      b: 'Joseph',
+      c: 'Matthias',
+      d: 'Barsabbas'
     },
-    answer: 'b'
+    answer: 'a'
   },
 
   60: {
-    question: 'Why did Aquila and Priscilla leave Italy?',
+    question: 'Who tore Jesus’ clothes as he stood before the Sanhedrin?',
     options: {
-      a: 'They heard about Paul and wanted to meet him',
-      b: 'They wanted to expand their business',
-      c: 'The Holy Spirit directed them to leave',
-      d: 'Emperor Claudius commanded all Jews to leave Rome'
+      a: 'One of the pharisees',
+      b: 'Someone from the crowd',
+      c: 'One of the soldiers',
+      d: 'The high priest'
     },
     answer: 'd'
   },
 
   61: {
-    question: 'What member of the council judging the apostles stated, "...let them alone, for if this plan or this undertaking is of man, it will fail; but if it is of God, you will not be able to overthrow them."?',
+    question: 'According to Jesus, why did the people refer to John the Baptist as being demon-possessed?',
     options: {
-      a: 'Caiaphas',
-      b: 'Galileo',
-      c: 'Annas',
-      d: 'none of the above'
+      a: 'Because of the miracles he performed',
+      b: 'Because he was against the religious leaders',
+      c: 'Because he hardly ate or drank',
+      d: 'Because of how he dressed'
     },
-    answer: 'd'
+    answer: 'c'
   },
 
   62: {
-    question: 'Around what time of the day did the Holy Ghost fall on the day of Pentecost?',
+    question: 'What was the leaven of Pharisees?',
     options: {
-      a: 'Third hour',
-      b: 'Ninth hour',
-      c: 'Noon',
-      d: 'Eleventh hour'
+      a: 'Their bitterness',
+      b: 'Their teaching',
+      c: 'Their unbelief',
+      d: 'Their spirit'
     },
-    answer: 'a'
+    answer: 'b'
   },
 
   63: {
-    question: 'According to Acts, Jesus\' resurrection was a fulfilment of whose prophecy?',
+    question: 'Who did Pilate offer to release instead of Jesus?',
     options: {
-      a: 'David',
-      b: 'Joel',
-      c: 'Isaiah',
-      d: 'Moses'
+      a: 'Barabbas',
+      b: 'Barnabas',
+      c: 'Barsabbas',
+      d: 'Bartimaeus'
     },
     answer: 'a'
   },
 
   64: {
-    question: 'Where was the Eunuch returning from when Philip met him?',
+    question: '"This is John the Baptist; he has risen from the dead! That is why miraculous powers are at work in him".  Who made this statement?',
     options: {
-      a: 'Jerusalem',
-      b: 'Caesarea',
-      c: 'Samaria',
-      d: 'Gaza'
+      a: 'The Pharisees',
+      b: 'The Sadducees',
+      c: 'Herod',
+      d: 'A scribe'
+    },
+    answer: 'c'
+  },
+
+  65: {
+    question: 'Why did Moses permit the Israelites to divorce?',
+    options: {
+      a: 'Because they were living under the old covenant',
+      b: 'Because their hearts were hard',
+      c: 'Because he did not want to cause a riot',
+      d: 'Moses did not permit divorce'
+    },
+    answer: 'b'
+  },
+
+  66: {
+    question: 'What was the reaction of the other ten disciples to the attempt by James and John to secure seats in Jesus\' kingdom?',
+    options: {
+      a: 'They were angry at the two brothers',
+      b: 'They laughed at the two brothers',
+      c: 'They argued among themselves about who was more deserving of a spot',
+      d: 'They did not hear about the incident'
     },
     answer: 'a'
   },
 
-  65: {
-    question: 'Who did Herod kill with the sword?',
-    options: {
-      a: 'Andrew',
-      b: 'John',
-      c: 'Matthew',
-      d: 'James'
-    },
-    answer: 'd'
-  },
-
-  66: {
-    question: 'Who was NOT one of the prophets or teachers at Antioch?',
-    options: {
-      a: 'Barnabas',
-      b: 'Peter',
-      c: 'Manaen',
-      d: 'Paul'
-    },
-    answer: 'b'
-  },
-
   67: {
-    question: 'What great scholar taught Saul before he was converted?',
+    question: '"Lord, Son of David, have mercy on us?", shouted the two blind men. But they were rebuked for shouting. Who rebuked them?',
     options: {
-      a: 'Aristotle',
-      b: 'Gamaliel',
-      c: 'Caiaphas',
-      d: 'Ananias'
+      a: 'Jesus',
+      b: 'The disciples',
+      c: 'The crowd',
+      d: 'The Pharisees'
     },
-    answer: 'b'
+    answer: 'c'
   },
 
   68: {
-    question: 'How many Jews said they would not eat or drink until they had killed Paul?',
+    question: 'In the parable of the Farmer, on which of the following places did the seed not fall?',
     options: {
-      a: '10',
-      b: '30',
-      c: '40',
-      d: 'more than 40'
+      a: 'Bad soil',
+      b: 'Shallow soil',
+      c: 'Footpath',
+      d: 'Good soil'
     },
-    answer: 'd'
+    answer: 'a'
   },
 
   69: {
-    question: 'Who fell asleep while Paul was long preaching?',
+    question: 'How many disciples did Jesus send to fetch the donkey and the colt?',
     options: {
-      a: 'Trophimus',
-      b: 'Aristarchus',
-      c: 'Gaius',
-      d: 'Eutychus'
+      a: '1',
+      b: '2',
+      c: '4',
+      d: 'The exact number was not mentioned'
     },
-    answer: 'd'
+    answer: 'b'
   },
 
   70: {
-    question: 'Apart from Paul, who else was a tentmaker?',
+    question: '"Teacher, which is the greatest commandment in the Law?" Who asked this question?',
     options: {
-      a: 'Barnabas',
-      b: 'Aquila',
-      c: 'Justus',
-      d: 'Crispus'
+      a: 'Peter',
+      b: 'One of the Pharisees',
+      c: 'One of the Sadducees',
+      d: 'A follower of Jesus'
     },
     answer: 'b'
   },
 
   71: {
-    question: 'Where did the chief captain have Paul sent after discovering the plot against his life?',
+    question: 'Which of these groups of people did not believe in the resurrection?',
     options: {
-      a: 'Antioch',
-      b: 'Jerusalem',
-      c: 'Caesarea',
-      d: 'Rome'
+      a: 'Sadducees',
+      b: 'Canaanites',
+      c: 'Pharisees',
+      d: 'Sanhedrin'
     },
-    answer: 'c'
+    answer: 'a'
   },
 
   72: {
-    question: 'How many years was Paul a prisoner of Felix?',
+    question: 'In Matthew 15, a woman with persistent faith receives healing for her demon-possessed daughter. Where was she was from?',
     options: {
-      a: '1',
-      b: '3',
-      c: '5',
-      d: 'none of the above'
+      a: 'Samaria',
+      b: 'Magadan',
+      c: 'Chorazin',
+      d: 'Canaan'
     },
     answer: 'd'
   },
 
   73: {
-    question: 'How many people were in the ship when it was shipwrecked?',
+    question: '"Even if I have to die with you, I will never disown you". Who made this statement?',
     options: {
-      a: '120',
-      b: '244',
-      c: '276',
-      d: '300'
+      a: 'Matthew',
+      b: 'John',
+      c: 'Peter',
+      d: 'All of the above'
+    },
+    answer: 'd'
+  },
+
+  74: {
+    question: 'Of what significance was the woman\'s action of pouring an expensive perfume on Jesus?',
+    options: {
+      a: 'It was a symbol of her love',
+      b: 'It was a preparation for Jesus’ burial',
+      c: 'It was a preparation for Jesus\' crucifixion',
+      d: 'It was a lesson on the importance of giving'
     },
     answer: 'c'
   },
 
-  74: {
-    question: 'In what city did Paul find an altar with the inscription "To the Unknown God"?',
-    options: {
-      a: 'Philippi',
-      b: 'Athens',
-      c: 'Corinth',
-      d: 'Ephesus'
-    },
-    answer: 'b'
-  },
-
   75: {
-    question: 'How many days did the people on the ship go without food?',
+    question: "Why mustn't we look down on little children?",
     options: {
-      a: '3',
-      b: '7',
-      c: '14',
-      d: '21'
+      a: 'Because they are the greatest in the Kingdom of Heaven',
+      b: 'Because no one knows tomorrow',
+      c: 'Because they have angels who are always before God in heaven',
+      d: 'Because we can learn something from them'
     },
     answer: 'c'
   },
 
   76: {
-    question: 'The first person in Acts to preach the Gospel to a Gentile (non-Jewish, non-Samaritan) audience was ______.',
+    question: 'Which among these cities did Jesus not rebuke?',
     options: {
-      a: 'Peter',
-      b: 'Paul',
-      c: 'Stephen',
-      d: 'James'
+      a: 'Capernaum',
+      b: 'Sidon',
+      c: 'Chorazin',
+      d: 'Bethsaida'
     },
-    answer: 'a'
+    answer: 'b'
   },
 
   77: {
-    question: 'In which city did Silas and Timothy meet up with Paul?',
+    question: 'Why did Jesus rebuke the cities in which he did many great miracles?',
     options: {
-      a: 'Antioch',
-      b: 'Corinth',
-      c: 'Athens',
-      d: 'Philippi'
+      a: 'Because they still lacked faith',
+      b: 'Because they did not repent',
+      c: 'Because they spread his fame when he told them not to',
+      d: 'Because they backslid'
     },
     answer: 'b'
   },
 
   78: {
-    question: 'Name the two men whom the Jerusalem Council chose to accompany Paul and Barnabas back to Antioch.',
+    question: 'What has been forcefully advancing since the days John the Baptist began preaching?',
     options: {
-      a: 'Silas and Cornelius',
-      b: 'Silas and Theophilus',
-      c: 'Judas (called Barsabbas) and Silas',
-      d: 'Judas (called Barsabbas) and Cornelius'
+      a: 'The Kingdom of Heaven',
+      b: 'The Roman army',
+      c: 'The Council of the Sadducees',
+      d: 'The love of money'
     },
-    answer: 'c'
+    answer: 'a'
   },
 
   79: {
-    question: 'Who was the Queen of the Ethiopians?',
+    question: 'Which prophet did Jesus refer to when some of the Scribes and Pharisees asked for a sign?',
     options: {
-      a: 'Candace',
-      b: 'Salome',
-      c: 'Phoebe',
-      d: 'Diana'
+      a: 'Jonah',
+      b: 'Elijah',
+      c: 'Moses',
+      d: 'Elisha'
     },
     answer: 'a'
   },
 
   80: {
-    question: 'Give the name of King Herod’s personal aid.',
+    question: 'Jesus compared his generation to _________?',
     options: {
-      a: 'Julius',
-      b: 'Felix',
-      c: 'Chamberlain',
-      d: 'Blastus'
+      a: 'Children playing in the marketplace',
+      b: 'Soldiers leaving their duty',
+      c: 'Prostitutes selling their bodies',
+      d: 'All of the above'
     },
-    answer: 'd'
+    answer: 'a'
   },
 
   81: {
-    question: 'Which city was NOT visited by Paul and Barnabas on their first missionary journey?',
+    question: '"No one can serve two masters. Either you will hate the one and love the other, or you will be devoted to the one and despise the other. You cannot serve both God and money". Where can this be found?',
     options: {
-      a: 'Perga',
-      b: 'Philippi',
-      c: 'Iconium',
-      d: 'Derbe'
+      a: 'Matthew 6:24',
+      b: 'Matthew 5:18',
+      c: 'Matthew 7:21',
+      d: 'Matthew 7:32'
     },
-    answer: 'b'
+    answer: 'a'
   },
 
   82: {
-    question: 'On their first missionary journey, Paul and Barnabas preached in Salamis and Paphos. These two cities were located on what island?',
+    question: '"Come to me, all you who are weary and burdened, and I will give you rest". Where can this be found?',
     options: {
-      a: 'Crete',
-      b: 'Sicily',
-      c: 'Cyprus',
-      d: 'Malta'
+      a: 'Matthew 12:27',
+      b: 'Matthew 9:27',
+      c: 'Matthew 11:28',
+      d: 'Matthew 10:28'
     },
     answer: 'c'
   },
 
   83: {
-    question: 'In preaching at Antioch in Pisidia, Paul tells his listeners that God gave the Israelites judges before he gave them a king. According to Paul, how long was this period of the judges?',
+    question: '\'Jesus looked at them and said, "With man this is impossible, but with God all things are possible".\' Where can this be found?',
     options: {
-      a: '450 years',
-      b: '550 years',
-      c: '650 years',
-      d: '750 years'
+      a: 'Matthew 17:26',
+      b: 'Matthew 18:26',
+      c: 'Matthew 19:26',
+      d: 'Matthew 20:26'
     },
-    answer: 'b'
+    answer: 'c'
   },
 
   84: {
-    question: 'What had the Jews in Rome heard about the Christianity sect before Paul got there?',
+    question: '"And I tell you that you are Peter, and on this rock I will build my church, and the gates of Hades will not overcome it". Where can this be found?',
     options: {
-      a: 'It was growing rapidly',
-      b: 'It was spoken against everywhere',
-      c: 'It was turning the world upside down',
-      d: 'They had filled Jerusalem with their doctrine'
+      a: 'Matthew 13:24',
+      b: 'Matthew 14:18',
+      c: 'Matthew 15:24',
+      d: 'Matthew 16:18'
     },
-    answer: 'b'
+    answer: 'd'
   },
 
   85: {
-    question: 'Whose father was healed of fever on the Island of Malta?',
+    question: '"Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them." Where can this be found?',
     options: {
-      a: 'Publius',
-      b: 'Cnidus',
-      c: 'Adria',
-      d: 'Julius'
+      a: 'Matthew 5:17',
+      b: 'Matthew 6:17',
+      c: 'Matthew 5:27',
+      d: 'Matthew 6:27'
     },
     answer: 'a'
   },
 
   86: {
-    question: 'Who was the centurion responsible for transporting Paul to Rome?',
+    question: '"But seek first his kingdom and his righteousness, and all these things will be given to you as well." Where can this be found?',
     options: {
-      a: 'Cnidus',
-      b: 'Gauis',
-      c: 'Julius',
-      d: 'none of the above'
+      a: 'Matthew 5:35',
+      b: 'Matthew 6:33',
+      c: 'Matthew 7:36',
+      d: 'Matthew 8:32'
     },
-    answer: 'c'
+    answer: 'b'
   },
 
   87: {
-    question: 'Who said, "Paul, you are out of your mind! Much learning is driving you mad!"?',
+    question: '\'Jesus replied: "Love the Lord your God with all your heart and with all your soul and with all your mind."\'Where can this be found?',
     options: {
-      a: 'Agrippa',
-      b: 'Felix',
-      c: 'Bernice',
-      d: 'Festus'
+      a: 'Matthew 20:27',
+      b: 'Matthew 21:27',
+      c: 'Mathew 21:37',
+      d: 'Matthew 22:37'
     },
     answer: 'd'
   },
 
   88: {
-    question: '“You have appealed to Caesar; to Caesar you shall go”. Who made this statement?',
+    question: '"Not everyone who says to me, \'Lord, Lord,\' will enter the kingdom of heaven, but only those who do the will of my Father who is in heaven." Where can this be found?',
     options: {
-      a: 'Festus',
-      b: 'Felix',
-      c: 'Agrippa',
-      d: 'Tertullus'
+      a: 'Matthew 5:23',
+      b: 'Matthew 6:37',
+      c: 'Matthew 7:21',
+      d: 'Mathew 8:12'
+    },
+    answer: 'c'
+  },
+
+  89: {
+    question: '\'This, then, is how you should pray: "Our Father in heaven, hallowed be your name."\' Where can this be found?',
+    options: {
+      a: 'Matthew 5:11',
+      b: 'Matthew 6:9',
+      c: 'Matthew 9:5',
+      d: 'Matthew 11:6'
+    },
+    answer: 'b'
+  },
+
+  90: {
+    question: '"For where two or three come together in my name, there am I with them." Where can this be found?',
+    options: {
+      a: 'Matthew 17:21',
+      b: 'Matthew 18:20',
+      c: 'Matthew 19:18',
+      d: 'Matthew 20:19'
+    },
+    answer: 'b'
+  },
+
+  91: {
+    question: '"Be perfect, therefore, as your heavenly Father is perfect." Where can this be found?',
+    options: {
+      a: 'Matthew 5:19',
+      b: 'Matthew 5:48',
+      c: 'Matthew 6:24',
+      d: 'Matthew 7:24'
+    },
+    answer: 'b'
+  },
+
+  92: {
+    question: '"For what profit is it to a man if he gains the whole world and loses his own soul?" Where can this be found',
+    options: {
+      a: 'Matthew 16:26',
+      b: 'Mathew 26:16',
+      c: 'Matthew 18:20',
+      d: 'Matthew 20:18'
     },
     answer: 'a'
   },
 
-  89: {
-    question: 'In what language did Paul give his defense to the Jews?',
+  93: {
+    question: '"Therefore, whatever you want men to do to you, do also to them, for this is _________"',
     options: {
-      a: 'Aramaic',
-      b: 'Latin',
-      c: 'Greek',
-      d: 'Hebrew'
+      a: 'good',
+      b: 'the gospel',
+      c: 'noteworthy',
+      d: 'the Law and the Prophets'
     },
     answer: 'd'
   },
 
-  90: {
-    question: 'Who was the spokesperson (orator) for the high priest who informed governor Felix against Paul?',
-    options: {
-      a: 'Tertullus',
-      b: 'Claudius Lysias',
-      c: 'Elymas',
-      d: 'Demetrius'
-    },
-    answer: 'a'
-  },
-
-  91: {
-    question: 'Who summoned Paul and Barnabas in order to hear the word of God?',
-    options: {
-      a: 'Elymas',
-      b: 'Governor Felix',
-      c: 'Sergius Paulus',
-      d: 'Manaen'
-    },
-    answer: 'c'
-  },
-
-  92: {
-    question: 'Where was Peter when Cornelius sent for him?',
-    options: {
-      a: 'Jerusalem',
-      b: 'Caesarea',
-      c: 'Joppa',
-      d: 'Philippi'
-    },
-    answer: 'c'
-  },
-
-  93: {
-    question: 'What did Prophet Agabus prophesy in Acts 11?',
-    options: {
-      a: 'Famine',
-      b: 'Miracles',
-      c: 'Revival',
-      d: 'Death'
-    },
-    answer: 'a'
-  },
-
   94: {
-    question: 'Where did Philip go as a result of persecution against the church?',
+    question: '"Go and search carefully for the young Child, and when you have found Him, bring back word to me, that I may come and ________ Him"',
     options: {
-      a: 'Damascus',
-      b: 'Samaria',
-      c: 'Ethiopia',
-      d: 'Caesarea'
+      a: 'present gifts to',
+      b: 'worship',
+      c: 'kill',
+      d: 'see'
     },
     answer: 'b'
   },
 
   95: {
-    question: 'Peter and John healed a lame man at the beautiful gate in chapter 3.  How many years had the lame man been in this condition?',
+    question: 'To which of these disciples of Jesus was this statement addressed: "Follow me, and I will make you fishers of men"?',
     options: {
-      a: 'under 20 years',
-      b: 'over 40 years',
-      c: 'about 25 years',
-      d: 'about 35 years'
+      a: 'Peter',
+      b: 'John',
+      c: 'Matthew',
+      d: 'Philip'
+    },
+    answer: 'a'
+  },
+
+  96: {
+    question: 'Who will separate the wicked from the righteous at the end of the world, throwing the wicked into the fiery furnace?',
+    options: {
+      a: 'God the Father',
+      b: 'Jesus',
+      c: 'The angels',
+      d: 'All of the above'
+    },
+    answer: 'c'
+  },
+
+  97: {
+    question: '"Then the _________ will shine forth like the sun in the kingdom of their Father."',
+    options: {
+      a: 'merciful',
+      b: 'sons',
+      c: 'meek',
+      d: 'righteous'
     },
     answer: 'd'
+  },
+
+  98: {
+    question: '"Thus you have made the commandment of God of no effect by your ________"',
+    options: {
+      a: 'disobedience',
+      b: 'unbelief',
+      c: 'tradition',
+      d: 'doctrine'
+    },
+    answer: 'c'
+  },
+
+  99: {
+    question: '"But as the days of _______ were, so also will the coming of the Son of Man be."',
+    options: {
+      a: 'Noah',
+      b: 'Moses',
+      c: 'Elijah',
+      d: 'Job'
+    },
+    answer: 'a'
+  },
+
+  100: {
+    question: '"Therefore bear fruits worthy of repentance". Who made this statement?',
+    options: {
+      a: 'Jeremiah',
+      b: 'Isaiah',
+      c: 'John the Baptist',
+      d: 'Jesus'
+    },
+    answer: 'c'
   }
 }
 

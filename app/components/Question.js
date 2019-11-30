@@ -23,7 +23,7 @@ export default class Question extends Component {
     const { questionNumber } = this.props.match.params
     const { question, options, answer } = QuizQuestions[questionNumber]
     const optionsMap = Object.keys(options).map(option => (
-      <div className={styles.options}>
+      <div key={option} className={styles.options}>
         <div className={styles.optionTag}>{option}.</div>
         <div>{options[option]}</div>
       </div>
